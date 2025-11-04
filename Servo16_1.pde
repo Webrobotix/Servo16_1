@@ -35,7 +35,7 @@ WARNING: This program controls mechanical devices that may move suddenly and wit
 /*
  * Webrobotix 2020-2025 - Servo16 v1.7.1
  * 16-Channel RC Servo Controller Interface with Sequence Recording
- * NEW in v1.7.1: Added Save As button for saving settings with new filename
+ * NEW in v1.6.1: Added Save As button for saving settings with new filename
  */
 
 import processing.serial.*;
@@ -1912,3 +1912,4 @@ class Button {
     return mouseX >= x && mouseX <= x + w && mouseY >= y && mouseY <= y + h;
   }
 }
+
