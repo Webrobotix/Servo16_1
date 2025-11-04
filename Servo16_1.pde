@@ -1673,7 +1673,7 @@ void drawSettingsStatus() {
     fill(0, 100, 200);
     textAlign(LEFT, TOP);
     textSize(14);
-    text("● " + settingsStatus, 365, 745);
+    text("● " + settingsStatus, 880, 700);
   }
   
   // Show currently loaded file
