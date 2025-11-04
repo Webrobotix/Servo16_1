@@ -33,9 +33,9 @@ WARNING: This program controls mechanical devices that may move suddenly and wit
 */
 
 /*
- * Webrobotix 2020-2025 - Servo16 v1.6.1
+ * Webrobotix 2020-2025 - Servo16 v1.7.1
  * 16-Channel RC Servo Controller Interface with Sequence Recording
- * NEW in v1.6.1: Added Save As button for saving settings with new filename
+ * NEW in v1.7.1: Added Save As button for saving settings with new filename
  */
 
 import processing.serial.*;
@@ -1673,15 +1673,15 @@ void drawSettingsStatus() {
     fill(0, 100, 200);
     textAlign(LEFT, TOP);
     textSize(14);
-    text("● " + settingsStatus, 65, 745);
+    text("● " + settingsStatus, 365, 745);
   }
   
   // Show currently loaded file
   if (!lastLoadedFileName.equals("")) {
     fill(100);
     textAlign(LEFT, TOP);
-    textSize(12);
-    text("Current file: " + lastLoadedFileName, 65, 765);
+    textSize(18);
+    text("Current file: " + lastLoadedFileName, 880, 720);
   }
 }
 
@@ -1912,5 +1912,3 @@ class Button {
     return mouseX >= x && mouseX <= x + w && mouseY >= y && mouseY <= y + h;
   }
 }
-
-
