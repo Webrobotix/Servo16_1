@@ -1143,7 +1143,7 @@ void exportArduinoSketch(String sketchName) {
   // Save the sketch file
   String[] sketchArray = sketchLines.toArray(new String[sketchLines.size()]);
   String hardwareType = usePWMShield ? "_PWMShield" : "_StandardServo";
-  saveStrings("data/" + sketchName + hardwareType + "_FIXED.ino", sketchArray);
+  saveStrings("data/" + sketchName + hardwareType, sketchArray);
   
   sequenceStatus = "FIXED sketch exported as '" + sketchName + hardwareType + ""; // "_FIXED.ino' with proper speed control"
   sequenceStatusTime = millis();
@@ -1912,4 +1912,5 @@ class Button {
     return mouseX >= x && mouseX <= x + w && mouseY >= y && mouseY <= y + h;
   }
 }
+
 
